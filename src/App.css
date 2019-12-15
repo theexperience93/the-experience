@@ -1,3 +1,127 @@
 .app {
-  text-align: center;
+}
+
+.header-container {
+  height: 100vh;
+
+  background: url("./images/background.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding-bottom: 5%;
+  box-sizing: border-box;
+}
+
+.x-logo {
+  position: absolute;
+  left: 4rem;
+  top: 4rem;
+
+  width: 9rem;
+}
+
+.info-container {
+  margin-left: 4rem;
+  margin-top: 20%;
+}
+
+.title {
+  color: white;
+
+  font-size: 60px;
+  font-family: "AvenirBlack";
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+.subtitle {
+  color: white;
+
+  font-size: 35px;
+  font-family: "AvenirBlack";
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+.description {
+  color: white;
+
+  font-family: "AvenirMedium";
+  font-size: 25px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.apply-button {
+  color: white;
+  background-color: #253776;
+
+  font-size: 30px;
+  font-family: "AvenirMedium";
+  letter-spacing: 2px;
+  padding: 1.5rem 3.5rem;
+  border: none;
+
+  text-transform: uppercase;
+}
+
+.bottom-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 50vh;
+  background-color: #253776;
+  color: white;
+
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.the-experience-quote {
+  text-transform: uppercase;
+
+  font-size: 20px;
+  font-family: "AvenirMedium";
+  letter-spacing: 1.5px;
+
+  margin: 0;
+}
+
+.the-experience-sound {
+  font-size: 18px;
+  font-family: "AvenirMedium";
+
+  margin: 0;
+}
+
+.the-experience-meaning {
+  font-size: 18px;
+  font-family: "AvenirMedium";
+
+  margin: 0;
+}
+
+.nvbf-logo {
+  width: 5rem;
+  margin-top: 6.5%;
+}
+
+.nvbf-title {
+  color: white;
+  font-size: 14px;
+
+  margin: 0.5rem 0;
 }
