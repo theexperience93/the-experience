@@ -4,7 +4,7 @@
 .header-container {
   height: 100vh;
 
-  background: url("./images/ball-background.jpg") no-repeat;
+  background: url("./images/ball-background.jpg") no-repeat 80% 50%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -144,6 +144,9 @@
 }
 
 @media all and (max-width: 550px) {
+  .header-container {
+    background-position-x: -450px;
+  }
   .x-logo {
     top: 2rem;
     left: 2rem;
@@ -175,5 +178,9 @@
 
   .button-container {
     margin-bottom: 10vh;
+  }
+
+  .the-experience-meaning {
+    width: 80%;
   }
 }
