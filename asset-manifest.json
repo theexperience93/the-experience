@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/the-experience/static/css/main.ee5b8b6f.chunk.css",
-    "main.js": "/the-experience/static/js/main.bd352188.chunk.js",
-    "main.js.map": "/the-experience/static/js/main.bd352188.chunk.js.map",
-    "runtime-main.js": "/the-experience/static/js/runtime-main.ad5e23b3.js",
-    "runtime-main.js.map": "/the-experience/static/js/runtime-main.ad5e23b3.js.map",
-    "static/js/2.6c6fdec5.chunk.js": "/the-experience/static/js/2.6c6fdec5.chunk.js",
-    "static/js/2.6c6fdec5.chunk.js.map": "/the-experience/static/js/2.6c6fdec5.chunk.js.map",
-    "index.html": "/the-experience/index.html",
-    "precache-manifest.d545fa2d3cc19ccb6b3930a497e02d6b.js": "/the-experience/precache-manifest.d545fa2d3cc19ccb6b3930a497e02d6b.js",
-    "service-worker.js": "/the-experience/service-worker.js",
-    "static/css/main.ee5b8b6f.chunk.css.map": "/the-experience/static/css/main.ee5b8b6f.chunk.css.map",
-    "static/js/2.6c6fdec5.chunk.js.LICENSE": "/the-experience/static/js/2.6c6fdec5.chunk.js.LICENSE",
-    "static/media/index.css": "/the-experience/static/media/AvenirLTStd-Roman.b1d7c6e0.otf",
-    "static/media/App.css": "/the-experience/static/media/ball-background.00d8eeb0.jpg",
-    "static/media/logo-hvit-nopadding.png": "/the-experience/static/media/logo-hvit-nopadding.59b0f1e5.png"
+    "main.css": "/static/css/main.336d71b8.chunk.css",
+    "main.js": "/static/js/main.f6f6266d.chunk.js",
+    "main.js.map": "/static/js/main.f6f6266d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ceaf6b81.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ceaf6b81.js.map",
+    "static/js/2.6c6fdec5.chunk.js": "/static/js/2.6c6fdec5.chunk.js",
+    "static/js/2.6c6fdec5.chunk.js.map": "/static/js/2.6c6fdec5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.5470e5f926909e9c90f6c09f5121a4cd.js": "/precache-manifest.5470e5f926909e9c90f6c09f5121a4cd.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.336d71b8.chunk.css.map": "/static/css/main.336d71b8.chunk.css.map",
+    "static/js/2.6c6fdec5.chunk.js.LICENSE": "/static/js/2.6c6fdec5.chunk.js.LICENSE",
+    "static/media/index.css": "/static/media/AvenirLTStd-Roman.b1d7c6e0.otf",
+    "static/media/App.css": "/static/media/ball-background.00d8eeb0.jpg",
+    "static/media/logo-hvit-nopadding.png": "/static/media/logo-hvit-nopadding.59b0f1e5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ad5e23b3.js",
+    "static/js/runtime-main.ceaf6b81.js",
     "static/js/2.6c6fdec5.chunk.js",
-    "static/css/main.ee5b8b6f.chunk.css",
-    "static/js/main.bd352188.chunk.js"
+    "static/css/main.336d71b8.chunk.css",
+    "static/js/main.f6f6266d.chunk.js"
   ]
 }
