@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "./images/logo-hvit-nopadding.png";
 import "./App.css";
 import "./hexagons.css";
+import ReactGA from "react-ga";
 
 function App() {
+  useEffect(() => {
+    ReactGA.initialize("UA-154697902-1");
+    ReactGA.event({
+      category: "View",
+      action: "Page loaded"
+    });
+  }, []);
+
   return (
     <div className="app">
       <div className="header-container">
@@ -22,7 +31,16 @@ function App() {
         {/*<div className="button-container">
           <button className="apply-button"> Apply now </button>
          </div> */}
-        <img src={logo} className="x-logo" />
+        <img
+          src={logo}
+          className="x-logo"
+          onClick={() => {
+            ReactGA.event({
+              category: "User",
+              action: "Logo click"
+            });
+          }}
+        />
       </div>
       <div className="bottom-content">
         <h2 className="the-experience-quote">The Experience</h2>
