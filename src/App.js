@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./images/logo-hvit-nopadding.png";
-import nvbf from "./images/logo-hvit-nopadding.png";
 import "./App.css";
+import "./hexagons.css";
 
 function App() {
   return (
@@ -19,9 +19,9 @@ function App() {
         <div className="hexagon-top-blue" />
         <div className="hexagon-right-yellow" />
 
-        <div className="button-container">
+        {/*<div className="button-container">
           <button className="apply-button"> Apply now </button>
-        </div>
+         </div> */}
         <img src={logo} className="x-logo" />
       </div>
       <div className="bottom-content">
@@ -30,8 +30,6 @@ function App() {
         <p className="the-experience-meaning">
           the event or occurence which leads an impression on someone
         </p>
-        <img alt="nvbf logo" src={nvbf} className="nvbf-logo" />
-        <p className="nvbf-title">Supported by HVBF</p>
       </div>
     </div>
   );
