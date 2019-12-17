@@ -26,6 +26,7 @@ function App() {
         <p className="the-experience-meaning">
           the event or occurence which leads an impression on someone
         </p>
+        <div className="hexagon" />
         <img alt="nvbf logo" src={nvbf} className="nvbf-logo" />
         <p className="nvbf-title">Supported by HVBF</p>
       </div>

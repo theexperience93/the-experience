@@ -4,7 +4,7 @@
 .header-container {
   height: 100vh;
 
-  background: url("./images/background.jpg") no-repeat center center;
+  background: url("./images/ball-background.jpg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -23,7 +23,7 @@
   left: 4rem;
   top: 4rem;
 
-  width: 9rem;
+  width: 7rem;
 }
 
 .info-container {
@@ -68,7 +68,7 @@
   color: white;
   background-color: #253776;
 
-  font-size: 30px;
+  font-size: 25px;
   font-family: "AvenirMedium";
   letter-spacing: 2px;
   padding: 1.5rem 3.5rem;
