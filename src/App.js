@@ -9,11 +9,15 @@ function App() {
       <div className="header-container">
         <div className="info-container">
           <h1 className="title"> The Experience </h1>
-          <h2 className="subtitle"> Oslo// 1.-3. May 2020 </h2>
+          <h2 className="subtitle"> Oslo// 1-3 May 2020 </h2>
           <p className="description">
-            For up and coming vollyeball teams in Europe
+            For up and coming volleyball teams in Europe
           </p>
         </div>
+        <div className="hexagon-top-yellow" />
+        <div className="hexagon-left-blue" />
+        <div className="hexagon-top-blue" />
+        <div className="hexagon-right-yellow" />
 
         <div className="button-container">
           <button className="apply-button"> Apply now </button>
@@ -26,7 +30,6 @@ function App() {
         <p className="the-experience-meaning">
           the event or occurence which leads an impression on someone
         </p>
-        <div className="hexagon" />
         <img alt="nvbf logo" src={nvbf} className="nvbf-logo" />
         <p className="nvbf-title">Supported by HVBF</p>
       </div>

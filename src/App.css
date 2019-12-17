@@ -16,6 +16,8 @@
 
   padding-bottom: 5%;
   box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
 }
 
 .x-logo {
@@ -39,6 +41,8 @@
   text-transform: uppercase;
 
   margin: 0;
+  position: relative;
+  z-index: 10;
 }
 
 .subtitle {
@@ -49,6 +53,8 @@
   text-transform: uppercase;
 
   margin: 0;
+  position: relative;
+  z-index: 10;
 }
 
 .description {
@@ -56,6 +62,9 @@
 
   font-family: "AvenirMedium";
   font-size: 25px;
+
+  position: relative;
+  z-index: 10;
 }
 
 .button-container {
@@ -75,6 +84,19 @@
   border: none;
 
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.apply-button:hover {
+  transform: scale(3);
+}
+
+.apply-button:hover::before {
+  content: "!!!!";
+}
+
+.apply-button:hover::after {
+  content: "!!!!";
 }
 
 .bottom-content {
@@ -82,7 +104,7 @@
   flex-direction: column;
   align-items: center;
 
-  height: 50vh;
+  height: 60vh;
   background-color: #253776;
   color: white;
 
@@ -103,15 +125,16 @@
 .the-experience-sound {
   font-size: 18px;
   font-family: "AvenirMedium";
+  letter-spacing: 0.8px;
 
-  margin: 0;
+  margin: 3px 0 0 0;
 }
 
 .the-experience-meaning {
   font-size: 18px;
   font-family: "AvenirMedium";
 
-  margin: 0;
+  margin: 5px 0 0 0;
 }
 
 .nvbf-logo {
@@ -124,4 +147,88 @@
   font-size: 14px;
 
   margin: 0.5rem 0;
+}
+
+.hexagon-top-yellow {
+  position: absolute;
+  top: 0;
+  left: -20rem;
+  transform: rotate(-8deg);
+}
+
+.hexagon-top-yellow:before,
+.hexagon-top-yellow:after {
+  content: "";
+  position: absolute;
+  border-left: 55vw solid transparent;
+  border-right: 50vw solid transparent;
+}
+
+.hexagon-top-yellow:after {
+  top: 100%;
+  width: 0;
+  border-top: 35vh solid rgba(255, 230, 1, 0.5);
+}
+
+.hexagon-top-blue {
+  position: absolute;
+  top: -5vh;
+  right: 70vw;
+  transform: rotate(1deg);
+}
+
+.hexagon-top-blue:before,
+.hexagon-top-blue:after {
+  content: "";
+  position: absolute;
+  border-left: 55vw solid transparent;
+  border-right: 55vw solid transparent;
+}
+
+.hexagon-top-blue:after {
+  top: 100%;
+  width: 0;
+  border-top: 25vh solid rgba(37, 55, 118, 0.6);
+}
+
+.hexagon-left-blue {
+  position: absolute;
+  top: 100vh;
+  left: 0vw;
+  transform: rotate(-90deg);
+}
+
+.hexagon-left-blue:before,
+.hexagon-left-blue:after {
+  content: "";
+  position: absolute;
+  border-left: 30vw solid transparent;
+  border-right: 30vw solid transparent;
+}
+
+.hexagon-left-blue:after {
+  top: 100%;
+  width: 0;
+  border-top: 35vh solid rgba(37, 55, 118, 0.6);
+}
+
+.hexagon-right-yellow {
+  position: absolute;
+  top: -15vh;
+  right: 0vh;
+  transform: rotate(85deg);
+}
+
+.hexagon-right-yellow:before,
+.hexagon-right-yellow:after {
+  content: "";
+  position: absolute;
+  border-left: 35vw solid transparent;
+  border-right: 35vw solid transparent;
+}
+
+.hexagon-right-yellow:after {
+  top: 100%;
+  width: 0;
+  border-top: 25vh solid rgba(255, 230, 1, 0.5);
 }
