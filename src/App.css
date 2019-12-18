@@ -3,8 +3,8 @@
 }
 .header-container {
   height: 100vh;
-  min-height: -webkit-fill-available;
   min-height: 100vh;
+  min-height: -webkit-fill-available;
 
   background: url("./images/ball-background.jpg") no-repeat 80% 50%;
   -webkit-background-size: cover;
