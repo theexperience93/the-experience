@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
+import ReactGA from "react-ga";
+import Form from "./Form";
 import logo from "./images/logo-hvit-nopadding.png";
+
 import "./App.css";
 import "./hexagons.css";
-import ReactGA from "react-ga";
 
-function App() {
+const App = () => {
   useEffect(() => {
     ReactGA.initialize("UA-154697902-1");
     ReactGA.event({
@@ -43,6 +45,7 @@ function App() {
         />
       </div>
       <div className="bottom-content">
+        <Form />
         <h2 className="the-experience-quote">The Experience</h2>
         <p className="the-experience-sound">/ðə ɛkˈspɪərɪəns/</p>
         <p className="the-experience-meaning">
@@ -51,6 +54,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;

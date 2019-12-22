@@ -1,0 +1,88 @@
+.form-wrapper {
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 5rem;
+}
+
+.form-title {
+  font-family: "AvenirBlack";
+  font-size: 1.2rem;
+  letter-spacing: 1.3px;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  margin-top: 4rem;
+}
+
+.form-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-inputfield-label {
+  font-family: "AvenirBlack";
+  font-size: 1.5rem;
+  letter-spacing: 1.3px;
+  margin-top: 3rem;
+}
+
+.form-inputfield {
+  width: 25rem;
+  height: 2.75rem;
+  margin-top: 1rem;
+  padding-left: 1rem;
+
+  border: 1px solid #bbbbbb;
+  background-color: transparent;
+  font-family: "AvenirBlack";
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 1.3px;
+}
+
+.form-inputfield::after {
+  content: "Submit";
+}
+
+.form-inputfield::placeholder {
+  color: #bbbbbb;
+  font-family: "AvenirBlack";
+  font-size: 1.2rem;
+}
+
+.progress-container {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 1rem;
+}
+
+.dot {
+  background-color: rgba(200, 200, 200, 0.5);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 2px;
+}
+
+.filled {
+  background-color: white;
+}
+
+@media all and (max-width: 550px) {
+  .form-inputfield {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .form-wrapper {
+    margin-bottom: 2rem;
+  }
+}

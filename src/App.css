@@ -98,9 +98,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding: 10% 5%;
 
-  height: 60vh;
+  height: 100vh;
   background-color: #253776;
   color: white;
 
@@ -114,7 +114,7 @@
   font-family: "AvenirMedium";
   letter-spacing: 1.5px;
 
-  margin: 0;
+  margin: 6rem 0 0 0;
 }
 
 .the-experience-sound {
@@ -180,6 +180,10 @@
 
   .button-container {
     margin-bottom: 10vh;
+  }
+
+  .the-experience-quote {
+    margin-top: 0;
   }
 
   .the-experience-meaning {
