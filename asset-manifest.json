@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.d91c948e.chunk.css",
+    "main.css": "/static/css/main.a44417c0.chunk.css",
     "main.js": "/static/js/main.7c72c350.chunk.js",
     "main.js.map": "/static/js/main.7c72c350.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ceaf6b81.js",
@@ -8,9 +8,9 @@
     "static/js/2.ebfa1f74.chunk.js": "/static/js/2.ebfa1f74.chunk.js",
     "static/js/2.ebfa1f74.chunk.js.map": "/static/js/2.ebfa1f74.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.457bf1bd33a9e350deae51e820ca28b4.js": "/precache-manifest.457bf1bd33a9e350deae51e820ca28b4.js",
+    "precache-manifest.eab2188a4815642103a4bfa147aaa6dd.js": "/precache-manifest.eab2188a4815642103a4bfa147aaa6dd.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.d91c948e.chunk.css.map": "/static/css/main.d91c948e.chunk.css.map",
+    "static/css/main.a44417c0.chunk.css.map": "/static/css/main.a44417c0.chunk.css.map",
     "static/js/2.ebfa1f74.chunk.js.LICENSE": "/static/js/2.ebfa1f74.chunk.js.LICENSE",
     "static/media/index.css": "/static/media/AvenirLTStd-Roman.b1d7c6e0.otf",
     "static/media/App.css": "/static/media/bg-temp.02eb52c2.jpg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.ceaf6b81.js",
     "static/js/2.ebfa1f74.chunk.js",
-    "static/css/main.d91c948e.chunk.css",
+    "static/css/main.a44417c0.chunk.css",
     "static/js/main.7c72c350.chunk.js"
   ]
 }
