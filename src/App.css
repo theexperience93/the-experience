@@ -6,7 +6,7 @@
   min-height: 100vh;
   min-height: -webkit-fill-available;
 
-  background: url("./images/ball-background.jpg") no-repeat 80% 50%;
+  background: url("./images/bg-temp.jpg") no-repeat 80% 50%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
