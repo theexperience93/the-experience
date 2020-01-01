@@ -45,7 +45,7 @@ const App = () => {
         />
       </div>
       <div className="bottom-content">
-        <Form />
+        {/* <Form /> */}
         <h2 className="the-experience-quote">The Experience</h2>
         <p className="the-experience-sound">/ðə ɛkˈspɪərɪəns/</p>
         <p className="the-experience-meaning">
