@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a56b903167b059c9fef93e8c94e6d1e5",
+    "revision": "0f3c0da68ef8a7721059a9effa63bdbe",
     "url": "/index.html"
   },
   {
-    "revision": "26b51daba9baeecd8b18",
-    "url": "/static/css/main.7e5e3bde.chunk.css"
+    "revision": "a9f01e45a45b392214b8",
+    "url": "/static/css/main.09851ee4.chunk.css"
   },
   {
-    "revision": "1f4a0a6ce85f1e83a924",
-    "url": "/static/js/2.c7ee1c7d.chunk.js"
+    "revision": "064096b8035e6d899911",
+    "url": "/static/js/2.ebfa1f74.chunk.js"
   },
   {
     "revision": "d705cb622423d72c5defbf368ca70dcc",
-    "url": "/static/js/2.c7ee1c7d.chunk.js.LICENSE"
+    "url": "/static/js/2.ebfa1f74.chunk.js.LICENSE"
   },
   {
-    "revision": "26b51daba9baeecd8b18",
-    "url": "/static/js/main.079aa5dc.chunk.js"
+    "revision": "a9f01e45a45b392214b8",
+    "url": "/static/js/main.beda1eeb.chunk.js"
   },
   {
     "revision": "68ad2004200bbd5aa484",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/AvenirLTStd-Roman.b1d7c6e0.otf"
   },
   {
-    "revision": "f77134a692d539e74e90dabca5b342ba",
-    "url": "/static/media/instagram.f77134a6.png"
+    "revision": "00d8eeb0284d05fed35849d66dc4b644",
+    "url": "/static/media/ball-background.00d8eeb0.jpg"
   },
   {
     "revision": "59b0f1e59f0d13db8380d3c8a67997b1",
