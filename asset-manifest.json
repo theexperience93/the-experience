@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.09851ee4.chunk.css",
+    "main.css": "/static/css/main.0de8bf38.chunk.css",
     "main.js": "/static/js/main.beda1eeb.chunk.js",
     "main.js.map": "/static/js/main.beda1eeb.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ceaf6b81.js",
@@ -8,18 +8,18 @@
     "static/js/2.ebfa1f74.chunk.js": "/static/js/2.ebfa1f74.chunk.js",
     "static/js/2.ebfa1f74.chunk.js.map": "/static/js/2.ebfa1f74.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.100c7a4a220cbe9089e3ce2766d601ac.js": "/precache-manifest.100c7a4a220cbe9089e3ce2766d601ac.js",
+    "precache-manifest.1d2e6548e5575c2a8a0764ef669ddffd.js": "/precache-manifest.1d2e6548e5575c2a8a0764ef669ddffd.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.09851ee4.chunk.css.map": "/static/css/main.09851ee4.chunk.css.map",
+    "static/css/main.0de8bf38.chunk.css.map": "/static/css/main.0de8bf38.chunk.css.map",
     "static/js/2.ebfa1f74.chunk.js.LICENSE": "/static/js/2.ebfa1f74.chunk.js.LICENSE",
     "static/media/index.css": "/static/media/AvenirLTStd-Roman.b1d7c6e0.otf",
-    "static/media/App.css": "/static/media/ball-background.00d8eeb0.jpg",
+    "static/media/App.css": "/static/media/bg-temp.02eb52c2.jpg",
     "static/media/logo-hvit-nopadding.png": "/static/media/logo-hvit-nopadding.59b0f1e5.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ceaf6b81.js",
     "static/js/2.ebfa1f74.chunk.js",
-    "static/css/main.09851ee4.chunk.css",
+    "static/css/main.0de8bf38.chunk.css",
     "static/js/main.beda1eeb.chunk.js"
   ]
 }

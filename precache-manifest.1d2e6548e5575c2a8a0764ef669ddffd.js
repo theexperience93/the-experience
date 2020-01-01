@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0f3c0da68ef8a7721059a9effa63bdbe",
+    "revision": "104d705a64eb579147443c4c91e4c39f",
     "url": "/index.html"
   },
   {
-    "revision": "a9f01e45a45b392214b8",
-    "url": "/static/css/main.09851ee4.chunk.css"
+    "revision": "d9bee8f05c6afbe26a35",
+    "url": "/static/css/main.0de8bf38.chunk.css"
   },
   {
     "revision": "064096b8035e6d899911",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.ebfa1f74.chunk.js.LICENSE"
   },
   {
-    "revision": "a9f01e45a45b392214b8",
+    "revision": "d9bee8f05c6afbe26a35",
     "url": "/static/js/main.beda1eeb.chunk.js"
   },
   {
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/AvenirLTStd-Roman.b1d7c6e0.otf"
   },
   {
-    "revision": "00d8eeb0284d05fed35849d66dc4b644",
-    "url": "/static/media/ball-background.00d8eeb0.jpg"
+    "revision": "02eb52c260e24c91fd51fcb1f07eeff5",
+    "url": "/static/media/bg-temp.02eb52c2.jpg"
   },
   {
     "revision": "59b0f1e59f0d13db8380d3c8a67997b1",
