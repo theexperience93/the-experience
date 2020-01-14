@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import ReactGA from "react-ga";
 import Form from "./Form";
 import logo from "./images/logo-hvit-nopadding.png";
@@ -15,6 +15,8 @@ const App = () => {
     });
   }, []);
 
+  const inputRef = useRef(null);
+
   return (
     <div className="app">
       <div className="header-container">
@@ -22,7 +24,8 @@ const App = () => {
           <h1 className="title"> The Experience </h1>
           <h2 className="subtitle"> Oslo// 1-3 May 2020 </h2>
           <p className="description">
-            For up and coming volleyball teams in Europe
+            For up and coming volleyball teams in Europe with a prizepool of
+            €20&nbsp;000
           </p>
         </div>
         <div className="hexagon-top-yellow" />
@@ -30,22 +33,26 @@ const App = () => {
         <div className="hexagon-top-blue" />
         <div className="hexagon-right-yellow" />
 
-        {/*<div className="button-container">
-          <button className="apply-button"> Apply now </button>
-         </div> */}
-        <img
-          src={logo}
-          className="x-logo"
-          onClick={() => {
-            ReactGA.event({
-              category: "User",
-              action: "Logo click"
-            });
-          }}
-        />
+        {window.location.href.includes("hugo") && (
+          <div className="button-container">
+            <button
+              className="apply-button"
+              onClick={() => {
+                window.scrollTo({
+                  behavior: "smooth",
+                  top: inputRef.current.offsetTop
+                });
+                inputRef.current.focus();
+              }}
+            >
+              Apply now
+            </button>
+          </div>
+        )}
+        <img src={logo} className="x-logo" alt="x-logo" />
       </div>
       <div className="bottom-content">
-        {/* <Form /> */}
+        {window.location.href.includes("hugo") && <Form inputRef={inputRef} />}
         <h2 className="the-experience-quote">The Experience</h2>
         <p className="the-experience-sound">/ðə ɛkˈspɪərɪəns/</p>
         <p className="the-experience-meaning">

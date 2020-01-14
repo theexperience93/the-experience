@@ -1,5 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .app {
-  background-color: #253776;
+  background-color: rgba(172, 158, 137, 1);
 }
 .header-container {
   height: 100vh;
@@ -147,7 +151,7 @@
 
 @media all and (max-width: 550px) {
   .header-container {
-    background-position-x: -450px;
+    background-position-x: -170px;
   }
   .x-logo {
     top: 2rem;
@@ -180,10 +184,6 @@
 
   .button-container {
     margin-bottom: 10vh;
-  }
-
-  .the-experience-quote {
-    margin-top: 0;
   }
 
   .the-experience-meaning {
