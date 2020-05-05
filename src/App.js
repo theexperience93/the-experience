@@ -32,27 +32,24 @@ const App = () => {
         <div className="hexagon-left-blue" />
         <div className="hexagon-top-blue" />
         <div className="hexagon-right-yellow" />
-
-        {window.location.href.includes("hugo") && (
-          <div className="button-container">
-            <button
-              className="apply-button"
-              onClick={() => {
-                window.scrollTo({
-                  behavior: "smooth",
-                  top: inputRef.current.offsetTop
-                });
-                inputRef.current.focus();
-              }}
-            >
-              Apply now
-            </button>
-          </div>
-        )}
+        <div className="button-container">
+          <button
+            className="apply-button"
+            onClick={() => {
+              window.scrollTo({
+                behavior: "smooth",
+                top: inputRef.current.offsetTop
+              });
+              inputRef.current.focus();
+            }}
+          >
+            Apply now
+          </button>
+        </div>
         <img src={logo} className="x-logo" alt="x-logo" />
       </div>
       <div className="bottom-content">
-        {window.location.href.includes("hugo") && <Form inputRef={inputRef} />}
+        <Form inputRef={inputRef} />
         <h2 className="the-experience-quote">The Experience</h2>
         <p className="the-experience-sound">/ðə ɛkˈspɪərɪəns/</p>
         <p className="the-experience-meaning">

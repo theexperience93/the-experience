@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import questions from "./questions";
 import "./form.css";
 
-const onSubmit = async answers => {
+const postAnswers = async answers => {
   const url =
     "https://us-central1-the-experience-262716.cloudfunctions.net/signup";
 
@@ -25,6 +25,8 @@ const onSubmit = async answers => {
       ]
     })
   });
+
+  return false;
 };
 
 const ProgressContainer = ({ numberFilled, numberOfDots }) => (
@@ -48,10 +50,11 @@ const Form = ({ inputRef }) => {
   const [status, setStatus] = useState("INITIAL");
 
   const question = questions[currentQuestionIdx];
+  const doneRef = useRef(null);
 
   const nextQuestion = () => {
     if (currentQuestionIdx === questions.length - 1) {
-      onSubmit(answers);
+      postAnswers(answers);
       setStatus("DONE");
     } else {
       setCurrentQuestionIdx(currentQuestionIdx + 1);
@@ -60,64 +63,69 @@ const Form = ({ inputRef }) => {
   };
 
   return (
-    <form className="form-wrapper">
+    <div className="form-wrapper">
       <h3 className="form-title">
         To give you the best volleyball experience in history, we need to ask
         you some questions about you and your team
       </h3>
-      {status === "DONE" ? (
-        <div className="done-message">
-          Thanks for applying! We will shortly send you a confirmation email,
-          and require more information about your team. If you have any
-          questions, feel free to reach out to us on facebook or Instagram!
-        </div>
-      ) : (
-        <>
-          <div className="form-input-container">
-            <label className="form-inputfield-label">{question.title}</label>
-            <textarea
-              ref={inputRef}
-              className={`form-inputfield ${
-                question.type === "LARGE" ? "large" : ""
-              }`}
-              placeholder="Answer..."
-              value={answers[currentQuestionIdx]}
-              onChange={e => {
-                const updatedAnswers = [...answers];
-                updatedAnswers[currentQuestionIdx] = e.target.value;
-                setAnswers(updatedAnswers);
-              }}
-            />
+      <div
+        ref={doneRef}
+        className="done-message"
+        style={{ display: status === "DONE" ? "flex" : "none" }}
+      >
+        Thanks for applying! We will shortly send you a confirmation email, and
+        require more information about your team. If you have any questions,
+        feel free to reach out to us on facebook or Instagram!
+      </div>
+      {status !== "DONE" && (
+        <div className="form-input-container">
+          <label className="form-inputfield-label">{question.title}</label>
+          <textarea
+            ref={inputRef}
+            className={`form-inputfield ${
+              question.type === "LARGE" ? "large" : ""
+            }`}
+            placeholder="Answer..."
+            value={answers[currentQuestionIdx]}
+            onChange={e => {
+              const updatedAnswers = [...answers];
+              updatedAnswers[currentQuestionIdx] = e.target.value;
+              setAnswers(updatedAnswers);
+            }}
+            onBlur={e => {
+              e.preventDefault();
+              e.stopPropagation();
+            }}
+          ></textarea>
 
-            <div className="form-button-container">
-              {currentQuestionIdx > 0 && (
-                <span
-                  className="back-button"
-                  onClick={() =>
-                    setCurrentQuestionIdx(Math.max(0, currentQuestionIdx - 1))
-                  }
-                >
-                  Back
-                </span>
-              )}
-
-              <button
-                className="submit-button"
-                onClick={nextQuestion}
-                disabled={answers[currentQuestionIdx] === ""}
-                type="button"
+          <div className="form-button-container">
+            {currentQuestionIdx > 0 && (
+              <span
+                className="back-button"
+                onClick={() =>
+                  setCurrentQuestionIdx(Math.max(0, currentQuestionIdx - 1))
+                }
               >
-                {currentQuestionIdx === questions.length - 1 ? "Apply" : "Next"}
-              </button>
-            </div>
-            <ProgressContainer
-              numberFilled={currentQuestionIdx + 1}
-              numberOfDots={questions.length}
-            />
+                Back
+              </span>
+            )}
+
+            <button
+              className="submit-button"
+              onClick={nextQuestion}
+              disabled={answers[currentQuestionIdx] === ""}
+              type="button"
+            >
+              {currentQuestionIdx === questions.length - 1 ? "Apply" : "Next"}
+            </button>
           </div>
-        </>
+          <ProgressContainer
+            numberFilled={currentQuestionIdx + 1}
+            numberOfDots={questions.length}
+          />
+        </div>
       )}
-    </form>
+    </div>
   );
 };
 
